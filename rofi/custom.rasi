@@ -1,0 +1,119 @@
+/**
+ * ROFI Color theme
+ * User: Qball
+ * Copyright: Dave Davenport
+ */
+
+* {
+    selected-normal-foreground:  rgba ( 21, 21, 21, 60 % );
+    foreground:                  rgba ( 0, 128, 255, 100 % );
+    normal-foreground:           @foreground;
+    red:                         rgba ( 220, 50, 47, 100 % );
+    selected-urgent-foreground:  rgba ( 51, 51, 51, 100 % );
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    urgent-foreground:           rgba ( 255, 153, 153, 100 % );
+    active-foreground:           rgba ( 170, 170, 17, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    selected-active-foreground:  rgba ( 51, 51, 51, 100 % );
+    background:                  rgba ( 21, 21, 21, 70 % );
+    bordercolor:                 rgba ( 41, 41, 41, 60 % );
+    normal-background:           rgba ( 0, 0, 0, 0 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    selected-normal-background:  rgba ( 17, 170, 170, 100 % );
+    border-color:                @foreground;
+    spacing:                     2;
+    separatorcolor:              rgba ( 17, 170, 170, 100 % );
+    urgent-background:           rgba ( 0, 0, 0, 0 % );
+    selected-urgent-background:  rgba ( 42, 36, 72, 80 % );
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    active-background:           rgba ( 0, 0, 0, 0 % );
+    selected-active-background:  rgba ( 170, 170, 17, 100 % );
+}
+#window {
+    background-color: @background;
+    border:           0;
+    padding:          20;
+}
+#mainbox {
+    border:  0;
+    background-color: @background;
+    expand: false;
+    spacing: 0.5em;
+    padding: 1em 0em 0em 1em;
+}
+#listview {
+    dynamic: false;
+}
+
+#textbox {
+    text-color: #b1b4b3;
+}
+
+#element {
+    border:  0;
+    vertical-align: 0.5;
+    padding: 0px 0px 0px 10px ;
+}
+#element.normal.normal {
+    background-color: @bordercolor;
+    vertical-align: 0;
+    text-color: #b1b4b3;
+}
+#element.alternate.normal {
+    background-color: @bordercolor;
+    text-color: #b1b4b3;
+}
+#element.normal.urgent {
+    background-color: @bordercolor;
+    text-color: #b1b4b3;
+}
+#element.normal.active {
+    background-color: @bordercolor;
+    text-color: #b1b4b3;
+}
+#element.alternate.active {
+    background-color: @bordercolor;
+    text-color: #b1b4b3;
+}
+#element.selected.normal {
+    background-color: @selected-urgent-background;
+    text-color: #b1b4b3;
+}
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color: #b1b4b3;
+}
+#element.selected.active {
+    background-color: @selected-urgent-background;
+    text-color: #b1b4b3;
+}
+#button.selected {
+    background-color: @selected-urgent-background;
+    text-color: #b1b4b3;
+}
+#inputbar {
+    spacing:    0;
+    text-color: #b1b4b3;
+    padding:    2px ;
+}
+#case-indicator {
+    spacing:    0;
+    text-color: #b1b4b3;
+}
+#entry {
+    spacing:    0;
+    text-color: #b1b4b3;
+}
+#prompt {
+    spacing:    0;
+    text-color: #b1b4b3;
+}
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+#textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+    text-color: #b1b4b3;
+}
