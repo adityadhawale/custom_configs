@@ -1,0 +1,128 @@
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Monaco, 11
+scrollback_lines = -1
+search_wrap = true
+icon_name = terminal
+#geometry = 640x480
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = ibeam
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = brave-browser-dev
+
+# set size hints for the window
+#size_hints = false
+
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
+# emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+[colors]
+#cursor = #dcdccc
+#cursor_foreground = #dcdccc
+foreground = #dcdccc
+foreground_bold = #ffffff
+background = rgba(8, 8, 10, 0.68)
+
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
+
+# if unset, will reverse foreground and background
+# highlight = #2f2f2f
+
+color0  = #02080A
+color1  = #418B4B
+color2  = #658F6F
+color3  = #8F986C
+color4  = #76A086
+color5  = #92B292
+color6  = #ABCBA5
+color7  = #E0EAD5
+color8  = #666666
+color9  = #418B4B
+color10 = #658F6F
+color11 = #8F986C
+color12 = #76A086
+color13 = #92B292
+color14 = #ABCBA5
+color15 = #E0EAD5
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 2
+#border = #3f3f3f
+#border_width = 0.5
+# roundness = 2.0
+
+# vim: ft=dosini cms=#%s
+
+#--$template: termite.template
+
+# Lighter Night
+[colors]
+# Base16 Material Darker
+
+foreground          = #EEFFFF
+foreground_bold     = #EEFFFF
+cursor              = #EEFFFF
+cursor_foreground   = #212121
+background          = rgba(22, 22, 22, 0.7)
+
+# 16 color spac
+
+# Black, Gray, Silver, White
+color0  = #212121
+color8  = #4A4A4A
+color7  = #EEFFFF
+color15 = #FFFFFF
+
+# Red
+color1  = #F07178
+color9  = #F07178
+
+# Green
+color2  = #FFCB6B
+color10 = #FFCB6B
+
+# Yellow
+color3  = #FFCB6B
+color11 = #FFCB6B
+
+# Blue
+color4  = #2D7F94
+color12 = #82AAFF
+
+# Purple
+color5  = #C3E88D
+color13 = #C3E88D
+
+# Teal
+color6  = #89DDFF
+color14 = #89DDFF
+
+# Extra colors
+color16 = #F78C6C
+color17 = #FF5370
+color18 = #303030
+color19 = #353535
+color20 = #B2CCD6
+color21 = #EEFFFF
