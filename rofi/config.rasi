@@ -1,59 +1,50 @@
 configuration {
-	modi: "drun";
-	width: 25;
-	lines: 10;
+	modi: "window,run,drun,ssh,combi";
+	width: 700;
+	lines: 20;
 	columns: 2;
-	font: "Monaco 11";
-	padding: 20;
-	ssh-client: "ssh";
-	show-icons: true;
-	icon-theme: "Papirus-Dark";
-	drun-show-actions: false;
-	sidebar-mode: true;
-	eh: 2;
+	theme: "theme";
+	font: "Monaco 12";
+	opacity: 85;
+	separator-style: "--";
+/*	bw: 1;*/
 	location: 1;
-	combi-modi: "window,drun";
-	line-padding: 2;
-	hide-scrollbar: true;
-	separator-style: "none";
-	combi-hide-mode-prefix: true;
-	fake-background: "screenshot";
-	fake-transparency: true;
-	color-window: "#111111, #111111, #111111";
-	color-normal: "#222222, #b1b4b3, #222222, #005577, #b1b4b3";
-	color-active: "#222222, #b1b4b3, #222222, #007763, #b1b4b3";
-	color-urgent: "#222222, #b1b4b3, #222222, #77003d, #b1b4b3";
-	yoffset: 25;
-	xoffset: 20;
-	cycle: false;
-	bw: 1;
-	display-drun: "Apps";
-	tokenize: true;
-	theme: "custom";
-
-/*	terminal: "rofi-sensible-terminal";*/
+	padding: 20;
+	yoffset: 30;
+	xoffset: 30;
+/*	fixed-num-lines: true;*/
+	show-icons: true;
+	terminal: "rofi-sensible-terminal";
+	ssh-client: "ssh";
 /*	ssh-command: "{terminal} -e {ssh-client} {host}";*/
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "xkill -id {window}";*/
 /*	window-match-fields: "all";*/
+	icon-theme: "Papirus";
 /*	drun-match-fields: "name,generic,exec,categories";*/
 /*	disable-history: false;*/
 /*	sort: false;*/
-/*	sorting-method: ;*/
+/*	levenshtein-sort: false;*/
 /*	case-sensitive: false;*/
+	cycle: false;
+/*	sidebar-mode: false;*/
 /*	eh: 1;*/
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
+	combi-modi: "window,drun";
 /*	matching: "normal";*/
 /*	tokenize: true;*/
 /*	m: "-5";*/
 /*	line-margin: 2;*/
 /*	line-padding: 1;*/
 /*	filter: ;*/
+/*	separator-style: "dash";*/
+/*	hide-scrollbar: false;*/
 /*	fullscreen: false;*/
+	fake-transparency: true;
 /*	dpi: -1;*/
 /*	threads: 0;*/
 /*	scrollbar-width: 8;*/
@@ -62,18 +53,18 @@ configuration {
 /*	window-format: "{w}    {i}{c}   {t}";*/
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
-/*	theme: ;*/
-/*	color-normal: ;*/
-/*	color-urgent: ;*/
-/*	color-active: ;*/
-/*	color-window: ;*/
+	color-normal: "black";
+	color-urgent: "#25B1CA";
+	color-active: "cyan";
+	color-window: "gray";
 /*	max-history-size: 25;*/
+/*	combi-hide-mode-prefix: false;*/
 /*	pid: "/run/user/1000/rofi.pid";*/
 /*	display-window: ;*/
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-/*	display-drun: ;*/
+	display-drun: "Application";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	kb-primary-paste: "Control+V,Shift+Insert";*/
@@ -81,14 +72,14 @@ configuration {
 /*	kb-clear-line: "Control+w";*/
 /*	kb-move-front: "Control+a";*/
 /*	kb-move-end: "Control+e";*/
-/*	kb-move-word-back: "Alt+b,Control+Left";*/
-/*	kb-move-word-forward: "Alt+f,Control+Right";*/
+/*	kb-move-word-back: "Alt+b";*/
+/*	kb-move-word-forward: "Alt+f";*/
 /*	kb-move-char-back: "Left,Control+b";*/
 /*	kb-move-char-forward: "Right,Control+f";*/
 /*	kb-remove-word-back: "Control+Alt+h,Control+BackSpace";*/
 /*	kb-remove-word-forward: "Control+Alt+d";*/
 /*	kb-remove-char-forward: "Delete,Control+d";*/
-/*	kb-remove-char-back: "BackSpace,Shift+BackSpace,Control+h";*/
+/*	kb-remove-char-back: "BackSpace,Control+h";*/
 /*	kb-remove-to-eol: "Control+k";*/
 /*	kb-remove-to-sol: "Control+u";*/
 /*	kb-accept-entry: "Control+j,Control+m,Return,KP_Enter";*/

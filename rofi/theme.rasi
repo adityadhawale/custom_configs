@@ -1,0 +1,138 @@
+configuration {
+	drun-display-format: "{icon}  {name}";
+	modi: "window,run,drun,ssh,combi";
+	width: 700;
+	columns: 2;
+	font: "Monaco 15";
+  display-drun: "Application";
+	show-icons: true;
+	icon-theme: "Papirus";
+	location: 1;
+	padding: 20;
+	yoffset: 30;
+  xoffset: 30;	
+	fake-transparency: false;
+	hide-scrollbar: false;
+	bw: 0;
+	terminal: "termite";
+	sidebar-mode: true;
+}
+
+/* colors */
+* {
+red: #EC5250;
+orange: #FFA500;
+blue: #25B1CA;
+green: #2ABB9C;
+purple: #5537D2;
+cyan: #2D7F94;
+}
+
+// black
+* {
+bg: #000F13;
+bg-sel: #00000066;
+bg-button: #1C2D37;
+fg: #ffffff;
+}
+
+// white
+/*
+* {
+bg: #ffffffa6;
+bg-sel: #ffffff8c;
+fg: #ffffff;
+}
+*/
+
+* {
+  background-color: #00000000;
+	text-font: "Monaco 13";
+
+  inputbar-margin:                      3px 3;
+  prompt-padding:                       10 10;
+  entry-padding:                        10 10 10 10;
+  list-element-padding:                 1;
+  list-element-margin:                  @inputbar-margin;
+  list-element-border:                  0px 4px 0px 4px;
+
+  apps-textbox-prompt-colon-padding:    0 0 0 0;
+
+}
+
+window {
+  height: 60%;
+  width: 700;
+  transparency: "true";
+	border-radius: 0;
+}
+
+mainbox {
+  children: [ inputbar, listview ];
+  padding: 10 10 0 10;
+  background-color: @bg;
+  border: 0;
+  border-radius: 5;
+  border-color: @bg;
+}
+
+listview {
+  columns: 2;
+  padding: 10;
+  spacing: 15;
+}
+
+element {
+  border: 0;
+  text-color: @fg;
+	background-color: @bg-button;
+  orientation: horizontal;
+  padding: 10 10 10 16;
+  border-radius: 2;
+}
+
+element selected {
+  background-color: @bg-sel;
+  border-color: @bg;
+  text-color: @cyan;
+}
+
+inputbar,
+prompt,
+textbox-prompt-colon,
+entry {
+  children:  [entry];
+  padding: 10 0 10 10;
+  /* change this colors to change style*/
+  background-color: @cyan;
+	text-color: @fg;
+  border: 0 0 0 0;
+  border-color: @fg;
+}
+
+#inputbar {
+  children: [ prompt, textbox-prompt-colon, entry ];
+  margin: 10;
+}
+
+#prompt {
+  background-color: @background;
+  text-color: @fg;
+}
+
+#textbox-prompt-colon {
+  expand: false;
+  str: ": ";
+}
+
+#entry {
+  text-color: @fg;
+  padding: 10 0 10 0;
+}
+
+#element.selected {
+  background-color: @cyan;
+	border: 2 2 2 2;
+  text-color: @accent;
+  border-color: @orange;
+}
